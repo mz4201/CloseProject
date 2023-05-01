@@ -2,10 +2,11 @@
 This project is for Customer Support Engineer take home project as part of the interview process. 
 Included with a CSV that has information on companies, contacts, phone numbers, emails, company founded date, revenue, US state.
 
-Part I: Import Leads to Close from a CSV file
+## Part I: Import Leads to Close from a CSV file
+
 Using the companies and contacts (leads) from the CSV file and convert them into an acceptable format to transmit via API. This allows an automated process to upload leads to Close platform all at once.
 
-[I don't think this part works as I'm having trouble on where to place the authorization key]
+**I don't think this part works as I'm having trouble on where to place the authorization key** 😕
 
 The script should:
 - group the csv data by Company
@@ -13,7 +14,8 @@ The script should:
 - convert the dictionary into a format acceptable to transmit via API
 - import to Close using API and provide the response code and leads
 
-Part II: Create Report from a CSV file
+## Part II: Create Report from a CSV file
+
 Using the companies, company founded date, revenue and US state to create a report in csv file format. The report categorized the companies by state and shows these info for each state:
 - how many companies
 - company that has highest revenue 
@@ -33,10 +35,8 @@ Here's what the script does:
 - create the report as a csv file
 
 
-To run the script:
+## Running the Script
 - download the csv file and the python file
 - run the script in the terminal with date parameters, example format:
-
-python.py 1920-01-01 2020-01-01
-
+     <pre><code>python.py 1920-01-01 2020-01-01 </code></pre>
 This should import all the leads to Close, then create a csv file in the folder between the date range.
