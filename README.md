@@ -6,7 +6,7 @@ Included with a CSV that has information on companies, contacts, phone numbers, 
 
 Using the companies and contacts (leads) from the CSV file and convert them into an acceptable format to transmit via API. This allows an automated process to upload leads to Close platform all at once.
 
-**I don't think this part works as I'm having trouble on where to place the authorization key** 😕
+**Ths part will likely give 402 authorization error, I think the issue may be the header** 😕
 
 The script should:
 - group the csv data by Company
