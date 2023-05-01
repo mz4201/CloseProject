@@ -18,7 +18,7 @@ def capWords(df):
 #         PART I          #
 ###########################
 
-#group by Company and upperse the values
+#group by Company and uppercase the values
 df1 = capWords(orig_df).groupby("Company")
 
 #make a dictionary to store each contacts and their associated companies
@@ -49,7 +49,7 @@ print(response.json())
 #         PART II         #
 ###########################
 
-#assign value to parameters input
+#assign value to parameters 
 start_date = pd.to_datetime(sys.argv[1])
 end_date = pd.to_datetime(sys.argv[2])
 
@@ -59,10 +59,10 @@ end_date = pd.to_datetime(sys.argv[2])
 df2 = orig_df.copy().dropna(subset=['Company','custom.Company Founded','custom.Company Revenue','Company US State'])
 df2 = capWords(df2)
 
-#change to date format for comanyFounded
+#change to date format for Comany Founded
 df2['custom.Company Founded'] = pd.to_datetime(df2['custom.Company Founded'], format='%d.%m.%Y')
 
-# change revenue column type to money value
+# change revenue column to float
 df2['custom.Company Revenue'] = df2['custom.Company Revenue'].apply(lambda x: float(x.replace('$','').replace(',',''))if isinstance(x, str) else x)
 
 #create new table with date filter
