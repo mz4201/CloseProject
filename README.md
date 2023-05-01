@@ -39,4 +39,4 @@ To run the script:
 
 python.py 1920-01-01 2020-01-01
 
-This will import all the leads to Close, then create a csv file in the folder between the date range.
+This should import all the leads to Close, then create a csv file in the folder between the date range.
